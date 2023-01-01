@@ -1,5 +1,4 @@
 
-import './App.css';
 import ContactManager from "./components/ContactManager";
 
 function App() {

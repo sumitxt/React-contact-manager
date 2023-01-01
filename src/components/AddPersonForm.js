@@ -6,8 +6,10 @@ const AddPersonForm = (props) => {
         setPerson(e.target.value)
     }
     function handleSubmit(e){
-        props.handleSubmit(person);
-        setPerson('')
+        if(person !==''){
+            props.handleSubmit(person);
+            setPerson('')
+        }
         e.preventDefault()
     }
 
